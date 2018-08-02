@@ -1,0 +1,59 @@
+.btn-1{
+    border-radius: 0;
+    margin: 5px;
+    position: relative;
+    border: none;
+    padding-right: 60px;
+
+    &:focus{
+        box-shadow: none;
+    }
+    &:hover{
+        box-shadow: 0 0 5px #888888;
+        .btn-1-icon{
+            background: transparent;
+            animation: f-bounce 0.3s ease;
+            animation-fill-mode: both;
+        }
+    }
+    .btn-1-icon{
+        transition: all 0.1s ease-out;
+        display: inline-flex;
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background: blue;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+
+@keyframes f-bounce{
+    0%{
+        -moz-transform: translateY(0) rotate(0deg);
+        -o-transform: translateY(0) rotate(0deg);
+        -webkit-transform: translateY(0) rotate(0deg);
+        -ms-transform: translateY(0) rotate(0deg);
+        transform: translateY(0) rotate(0deg);
+    }
+    50%{
+        -moz-transform: translateY(-10px) rotate(-20deg);
+        -webkit-transform: translateY(-10px) rotate(-20deg);
+        -ms-transform: translateY(-10px) rotate(-20deg);
+        -o-transform: translateY(-10px) rotate(-20deg);
+        transform: translateY(-10px) rotate(-20deg);
+    }
+    75%{
+        -moz-transform: translateY(10px) scaleY(0.5) rotate(20deg);
+        -o-transform: translateY(10px) scaleY(0.5) rotate(20deg);
+        -webkit-transform: translateY(10px) scaleY(0.5) rotate(20deg);
+        -ms-transform: translateY(10px) scaleY(0.5) rotate(20deg);
+        transform: translateY(10px) scaleY(0.5) rotate(20deg);
+    }
+    100%{
+    }
+}

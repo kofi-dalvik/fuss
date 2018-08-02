@@ -1,4 +1,5 @@
-body{
-    background: black;
-    color: white;
-}
+@import "base";
+@import "components/buttons";
+@import "components/backgrounds";
+@import "components/others";
+@import "components/input";

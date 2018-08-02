@@ -1,0 +1,59 @@
+@mixin bgMixin($color) {
+    background: $color;
+    color: white;
+    &.btn{
+        background: $color;
+        &:active{
+            box-shadow: 0 0 0 2px $color;
+        }
+    }
+    .btn-1-icon{
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
+
+@mixin bgGradientMixin($color) {
+    background: $color;
+    color: white;
+    &.btn{
+        background: linear-gradient(to right, $primary, $color);
+        &:active{
+            box-shadow: 0 0 0 2px $color;
+        }
+    }
+    .btn-1-icon{
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
+
+.bg-green{
+    @include bgMixin($green);
+}
+
+.bg-green-gradient{
+    @include bgGradientMixin($green);
+}
+
+.bg-orange{
+    @include bgMixin($orange);
+}
+
+.bg-orange-gradient{
+    @include bgGradientMixin($orange);
+}
+
+.bg-blue{
+    @include bgMixin($blue);
+}
+
+.bg-blue-gradient{
+    @include bgGradientMixin($blue);
+}
+
+.bg-yellow{
+    @include bgMixin($yellow);
+}
+
+.bg-yellow-gradient{
+    @include bgGradientMixin($yellow);
+}
