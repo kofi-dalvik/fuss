@@ -27,9 +27,24 @@ html, body{
         }
     }
     .form{
+        h3{
+            margin-bottom: 50px;
+        }
         background: white;
         padding: 50px;
         height: 100%;
         // box-shadow: 0 0 10px 3px white;
+        hr{
+            background: #dddddd;
+            position: relative;
+            &::after{
+                content: "Or";
+                position: absolute;
+                top: -12px;
+                background: white;
+                padding: 0 10px;
+                left: 45%;
+            }
+        }
     }
 }

@@ -57,3 +57,11 @@
 .bg-yellow-gradient{
     @include bgGradientMixin($yellow);
 }
+
+.bg-facebook-blue{
+    @include bgMixin(#49639E);
+}
+
+.bg-twitter-blue{
+    @include bgMixin(#0084FF);
+}

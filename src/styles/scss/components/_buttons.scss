@@ -1,10 +1,10 @@
 .btn-1{
     border-radius: 0;
-    margin: 5px;
     position: relative;
     border: none;
     padding-right: 60px;
-
+    padding-top: 10px;
+    padding-bottom: 10px;
     &:focus{
         box-shadow: none;
     }
